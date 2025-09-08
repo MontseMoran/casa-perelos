@@ -1,0 +1,8 @@
+// Importo lo global
+@use "./core/vars" as*;
+@use"./core/mixins" as *;
+@use "./core/base";
+
+
+@use"./components/landing.scss";
+@use "./components/header.scss";

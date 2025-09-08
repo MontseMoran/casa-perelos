@@ -1,0 +1,99 @@
+@use "../core/vars" as *;
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('/img/madera.jpg') center/cover no-repeat;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.2); // overlay suave
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2; // asegura que logo/texto estén por encima del overlay
+  }
+}
+
+.logo3 {
+  width: 300px;
+  animation: emerger 2.5s ease-out forwards, latido 2s infinite 2.5s;
+}
+
+// ✨ Título animado letra a letra
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $color-base;
+  margin-top: 1rem;
+
+  .title-char {
+    display: inline-block;
+    white-space: pre; // mantiene los espacios
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInChar 0.05s forwards;
+    animation-delay: calc(var(--char-index) * 0.05s);
+  }
+}
+
+// subtítulo con aparición suave
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: $color-base;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 2s;
+}
+
+button {
+  font-size: 0.9rem;
+  background-color: $color-boton;
+  padding: 0.4rem 0.8rem;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: $color-boton-hover;
+    border-color: $color-base;
+    transition: 1.5s;
+  }
+}
+
+// 🔑 Animaciones
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes emerger {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInChar {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
