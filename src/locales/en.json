@@ -1,7 +1,132 @@
 {
-  "landing": {
-    "title": "Welcome to Casa Perelos",
-    "subtitle": "Your rural accommodation in the heart of Galicia",
-    "button": "Enter"
+  "home": {
+    "introAnimation": {
+      "message": "Welcome to Casa Perelos, your rural retreat in the heart of Galicia.",
+      "logoAlt": "Casa Perelos logo"
+    },
+    "entry": {
+      "button": "Start experience",
+      "waiting": "Playing welcome animation...",
+      "helper": "Once the heartbeat ends, press to explore Casa Perelos."
+    },
+    "nav": {
+      "brand": "Casa Perelos",
+      "aria": "Main navigation",
+      "items": {
+        "inicio": "Home",
+        "laCasa": "The House",
+        "estancias": "Rooms",
+        "servicios": "Services",
+        "entorno": "Surroundings",
+        "contacto": "Contact"
+      }
+    },
+    "hero": {
+      "eyebrow": "Casa Perelos",
+      "title": "Discover Casa Perelos",
+      "subtitle": "An eighteenth-century manor lovingly restored so you can unwind among Galician nature, tradition and flavours.",
+      "cta": "View suites",
+      "secondaryCta": "Plan your stay"
+    },
+    "story": {
+      "title": "A manor house with a soul",
+      "body": "Every room keeps the original stonework and the warmth of Galician wood. We want you to feel you're arriving at a lived-in home, not just a hotel.",
+      "points": [
+        "Sensitive restoration using traditional materials.",
+        "Bright spaces overlooking the Miño valley.",
+        "Common rooms created for long conversations and shared meals."
+      ],
+      "imageAlt": "Main living room at Casa Perelos with the lareira lit",
+      "caption": "The lareira fireplace, a natural gathering spot for guests and hosts."
+    },
+    "rooms": {
+      "title": "Rooms and corners full of character",
+      "subtitle": "Master suite, boutique bedrooms and shared rooms bathed in natural light.",
+      "cards": [
+        {
+          "key": "cordas",
+          "title": "Cordas Suite",
+          "body": "Generous bedroom with glass gallery, noble fabrics and a private rain shower bathroom.",
+          "imageAlt": "Cordas Suite at Casa Perelos"
+        },
+        {
+          "key": "corte",
+          "title": "A Corte Room",
+          "body": "Cosy room with stone walls, wooden scents and views over the historic courtyard.",
+          "imageAlt": "A Corte double room"
+        },
+        {
+          "key": "salon",
+          "title": "Living room with lareira",
+          "body": "Shared lounge to enjoy homemade breakfasts and evenings by the fire.",
+          "imageAlt": "Casa Perelos lounge with sofas and fireplace"
+        }
+      ]
+    },
+    "highlights": {
+      "title": "What makes your stay special",
+      "subtitle": "Family-run service, local produce and tailored experiences.",
+      "items": [
+        {
+          "title": "Homemade breakfasts",
+          "body": "Freshly baked bread, artisanal jams and coffee roasted in Galicia."
+        },
+        {
+          "title": "Curated routes",
+          "body": "We guide you through wineries, viewpoints and charming villages across the Ribeira Sacra."
+        },
+        {
+          "title": "Sustainable details",
+          "body": "Renewable energy, eco-friendly amenities and local suppliers."
+        }
+      ]
+    },
+    "experiences": {
+      "title": "Live the Ribeira Sacra from within",
+      "subtitle": "Terraced vineyards, waterfalls and Romanesque heritage surround us.",
+      "items": [
+        {
+          "title": "Trails by the Miño",
+          "body": "Walk among century-old chestnut trees and discover sweeping valley views."
+        },
+        {
+          "title": "Waterfalls and natural pools",
+          "body": "The Augacaída waterfall is a short hike straight from our doorstep."
+        },
+        {
+          "title": "Heroic wine tourism",
+          "body": "Taste wines crafted on steep terraces alongside local winemakers."
+        }
+      ],
+      "imageAlt": "Waterfall in the natural surroundings of Casa Perelos",
+      "imageCaption": "Augacaída waterfall, an essential excursion during your stay."
+    },
+    "gallery": {
+      "title": "Snapshots of Casa Perelos",
+      "subtitle": "Stone courtyard, sunlit terraces and thoughtful details.",
+      "images": [
+        {
+          "key": "patio",
+          "caption": "The inner courtyard, ideal for an evening coffee."
+        },
+        {
+          "key": "terraza",
+          "caption": "Terrace overlooking the meadows around the house."
+        },
+        {
+          "key": "cocina",
+          "caption": "Traditional kitchen ready for tastings and show-cooking."
+        },
+        {
+          "key": "entorno",
+          "caption": "Native forests and waterfalls just minutes away."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Get in touch",
+      "body": "Write to us and we'll help you craft a tailor-made stay at Casa Perelos.",
+      "cta": "hola@casaperelos.com"
+    }
   }
 }

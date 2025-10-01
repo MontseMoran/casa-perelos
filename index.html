@@ -6,6 +6,32 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            heartbeat: {
+              '0%, 100%': { transform: 'scale(1)' },
+              '14%': { transform: 'scale(1.12)' },
+              '28%': { transform: 'scale(1)' },
+              '42%': { transform: 'scale(1.08)' },
+              '70%': { transform: 'scale(1)' }
+            },
+            'fade-out': {
+              '0%': { opacity: '1' },
+              '100%': { opacity: '0' }
+            }
+          },
+          animation: {
+            heartbeat: 'heartbeat 1.8s ease-in-out infinite',
+            'fade-out': 'fade-out 0.7s ease forwards'
+          }
+        }
+      }
+    };
+  </script>
 
   <title>Casa Perelos</title>
   <link rel="preload" href="/img/madera.jpg" as="image">
