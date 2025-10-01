@@ -1,49 +1,132 @@
 {
-  "landing": {
-    "title": "Bienvenido a Casa Perelos",
-    "subtitle": "Tu alojamiento rural en el corazón de Galicia",
-    "button": "Entrar"
-  },
   "home": {
+    "introAnimation": {
+      "message": "Bienvenido a Casa Perelos, tu alojamiento rural en el corazón de Galicia.",
+      "logoAlt": "Logotipo de Casa Perelos"
+    },
+    "entry": {
+      "button": "Comenzar experiencia",
+      "waiting": "Mostrando introducción...",
+      "helper": "Cuando termine el latido, pulsa para descubrir la casa."
+    },
+    "nav": {
+      "brand": "Casa Perelos",
+      "aria": "Navegación principal",
+      "items": {
+        "inicio": "Inicio",
+        "laCasa": "La Casa",
+        "estancias": "Estancias",
+        "servicios": "Servicios",
+        "entorno": "Entorno",
+        "contacto": "Contacto"
+      }
+    },
     "hero": {
+      "eyebrow": "Casa Perelos",
       "title": "Descubre Casa Perelos",
       "subtitle": "Una casa solariega del siglo XVIII restaurada con mimo para que disfrutes de la calma, la naturaleza y la gastronomía gallega.",
-      "cta": "Conoce nuestras estancias"
+      "cta": "Ver estancias",
+      "secondaryCta": "Planifica tu estancia"
     },
-    "intro": {
-      "title": "Una acogida gallega auténtica",
-      "body": "Casa Perelos se levanta entre robles y praderas en la Ribeira Sacra lucense. Cada piedra y cada viga hablan de la historia de la familia que la habita, ahora abierta para que vivas una escapada con carácter propio."
+    "story": {
+      "title": "Una casa con historia y alma propia",
+      "body": "En Casa Perelos cada habitación conserva la piedra original y la calidez de la madera gallega. Queremos que sientas que llegas a una casa viva, no a un hotel.",
+      "points": [
+        "Restauración respetuosa con los materiales tradicionales.",
+        "Estancias luminosas que miran al valle del Miño.",
+        "Espacios comunes pensados para compartir sobremesas y conversaciones."
+      ],
+      "imageAlt": "Salón principal de Casa Perelos con lareira encendida",
+      "caption": "La lareira central, punto de encuentro de huéspedes y anfitriones."
     },
-    "highlights": [
-      {
-        "title": "Suites con carácter",
-        "body": "Habitaciones amplias, con muros de piedra y textiles naturales, pensadas para el descanso y el confort."
-      },
-      {
-        "title": "Sabores kilómetro cero",
-        "body": "Desayunos artesanos con producto local y propuestas gastronómicas que celebran la cocina gallega."
-      },
-      {
-        "title": "Naturaleza y cultura",
-        "body": "A un paso de rutas, viñedos y aldeas con encanto para descubrir la esencia de la Ribeira Sacra."
-      }
-    ],
+    "rooms": {
+      "title": "Habitaciones y rincones con carácter",
+      "subtitle": "Suite principal, dormitorios boutique y salas comunes que abrazan la luz natural.",
+      "cards": [
+        {
+          "key": "cordas",
+          "title": "Suite Cordas",
+          "body": "Dormitorio amplio con galería acristalada, textiles nobles y baño privado con ducha efecto lluvia.",
+          "imageAlt": "Suite Cordas de Casa Perelos"
+        },
+        {
+          "key": "corte",
+          "title": "Habitación A Corte",
+          "body": "Espacio acogedor con muros de piedra, aromas a madera y vistas al antiguo patio de labores.",
+          "imageAlt": "Habitación A Corte con cama doble"
+        },
+        {
+          "key": "salon",
+          "title": "Salón con lareira",
+          "body": "Zona común para degustar desayunos artesanos y charlas a la luz del fuego.",
+          "imageAlt": "Salón de Casa Perelos con sofás y lareira"
+        }
+      ]
+    },
+    "highlights": {
+      "title": "Lo que hace especial tu estancia",
+      "subtitle": "Atención familiar, productos de proximidad y experiencias diseñadas para ti.",
+      "items": [
+        {
+          "title": "Desayunos caseros",
+          "body": "Pan recién horneado, mermeladas artesanas y café de tostadores gallegos."
+        },
+        {
+          "title": "Rutas personalizadas",
+          "body": "Te guiamos por bodegas, miradores y aldeas con encanto en la Ribeira Sacra."
+        },
+        {
+          "title": "Detalles sostenibles",
+          "body": "Energía renovable, amenities ecológicos y proveedores locales."
+        }
+      ]
+    },
+    "experiences": {
+      "title": "Vive la Ribeira Sacra desde dentro",
+      "subtitle": "Estamos rodeados de viñedos en pendiente, cascadas y patrimonio románico.",
+      "items": [
+        {
+          "title": "Senderos junto al Miño",
+          "body": "Camina entre castaños centenarios y descubre vistas panorámicas al valle."
+        },
+        {
+          "title": "Fervenzas y pozas naturales",
+          "body": "La fervenza de Augacaída está a un paseo desde la puerta de la casa."
+        },
+        {
+          "title": "Enoturismo heroico",
+          "body": "Degusta vinos elaborados en bancales imposibles con viticultores locales."
+        }
+      ],
+      "imageAlt": "Cascada en el entorno natural de Casa Perelos",
+      "imageCaption": "Fervenza de Augacaída, una de las visitas imprescindibles durante la estancia."
+    },
     "gallery": {
-      "title": "Rincones de la casa",
-      "subtitle": "Imágenes reales de Casa Perelos y su entorno natural."
+      "title": "Instantáneas de Casa Perelos",
+      "subtitle": "Patio empedrado, terrazas soleadas y detalles que enamoran.",
+      "images": [
+        {
+          "key": "patio",
+          "caption": "El patio interior, perfecto para un café al atardecer."
+        },
+        {
+          "key": "terraza",
+          "caption": "Terraza con vistas a los prados que rodean la casa."
+        },
+        {
+          "key": "cocina",
+          "caption": "Cocina tradicional lista para degustaciones y showcookings."
+        },
+        {
+          "key": "entorno",
+          "caption": "Bosques autóctonos y cascadas a pocos minutos."
+        }
+      ]
     },
-    "galleryCaptions": [
-      "Fachada principal entre castaños",
-      "Patio interior para desconectar",
-      "Salón común con lareira",
-      "Suite Cordas con piedra vista",
-      "Terraza soleada con vistas al valle",
-      "Entorno natural de la fervenza de Augacaída"
-    ],
-    "experience": {
-      "title": "Vive la experiencia completa",
-      "body": "Organizamos catas, rutas por la Ribeira Sacra y actividades a medida para que aproveches cada minuto de tu estancia.",
-      "cta": "Planifica tu estancia"
+    "contact": {
+      "title": "Contacta con nosotros",
+      "body": "Escríbenos y planificaremos contigo una estancia a medida en Casa Perelos.",
+      "cta": "hola@casaperelos.com"
     }
   }
 }
