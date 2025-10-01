@@ -3,5 +3,47 @@
     "title": "Bienvenido a Casa Perelos",
     "subtitle": "Tu alojamiento rural en el corazón de Galicia",
     "button": "Entrar"
+  },
+  "home": {
+    "hero": {
+      "title": "Descubre Casa Perelos",
+      "subtitle": "Una casa solariega del siglo XVIII restaurada con mimo para que disfrutes de la calma, la naturaleza y la gastronomía gallega.",
+      "cta": "Conoce nuestras estancias"
+    },
+    "intro": {
+      "title": "Una acogida gallega auténtica",
+      "body": "Casa Perelos se levanta entre robles y praderas en la Ribeira Sacra lucense. Cada piedra y cada viga hablan de la historia de la familia que la habita, ahora abierta para que vivas una escapada con carácter propio."
+    },
+    "highlights": [
+      {
+        "title": "Suites con carácter",
+        "body": "Habitaciones amplias, con muros de piedra y textiles naturales, pensadas para el descanso y el confort."
+      },
+      {
+        "title": "Sabores kilómetro cero",
+        "body": "Desayunos artesanos con producto local y propuestas gastronómicas que celebran la cocina gallega."
+      },
+      {
+        "title": "Naturaleza y cultura",
+        "body": "A un paso de rutas, viñedos y aldeas con encanto para descubrir la esencia de la Ribeira Sacra."
+      }
+    ],
+    "gallery": {
+      "title": "Rincones de la casa",
+      "subtitle": "Imágenes reales de Casa Perelos y su entorno natural."
+    },
+    "galleryCaptions": [
+      "Fachada principal entre castaños",
+      "Patio interior para desconectar",
+      "Salón común con lareira",
+      "Suite Cordas con piedra vista",
+      "Terraza soleada con vistas al valle",
+      "Entorno natural de la fervenza de Augacaída"
+    ],
+    "experience": {
+      "title": "Vive la experiencia completa",
+      "body": "Organizamos catas, rutas por la Ribeira Sacra y actividades a medida para que aproveches cada minuto de tu estancia.",
+      "cta": "Planifica tu estancia"
+    }
   }
 }

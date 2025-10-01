@@ -1,0 +1,204 @@
+@use "../core/vars" as *;
+
+.home {
+  font-family: $font-principal;
+  color: $color-base;
+
+  &__hero {
+    position: relative;
+    min-height: 80dvh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: clamp(3rem, 10vw, 6rem) 1.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  &__hero-content {
+    max-width: 780px;
+    display: grid;
+    gap: 1rem;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  &__eyebrow {
+    font-size: 0.9rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__hero-text {
+    font-size: clamp(1rem, 2.6vw, 1.4rem);
+    line-height: 1.6;
+  }
+
+  &__cta {
+    justify-self: center;
+    padding: 0.75rem 1.8rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: $color-boton;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $color-boton-hover;
+      transform: translateY(-2px);
+    }
+
+    &--light {
+      background-color: transparent;
+      border-color: rgba(255, 255, 255, 0.75);
+      color: white;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+
+  &__intro {
+    padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 7vw, 5rem);
+    display: grid;
+    gap: clamp(2rem, 5vw, 3rem);
+    background: linear-gradient(180deg, rgba(241, 236, 228, 0.6), rgba(255, 255, 255, 0.95));
+  }
+
+  &__intro-text {
+    max-width: 860px;
+    justify-self: center;
+    text-align: center;
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: clamp(1rem, 2.4vw, 1.2rem);
+      line-height: 1.7;
+      font-family: $font-secundaria;
+    }
+  }
+
+  &__highlights {
+    display: grid;
+    gap: clamp(1.5rem, 2.6vw, 2.5rem);
+
+    @media (min-width: $bp-tablet) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  &__highlight {
+    background: white;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(65, 40, 12, 0.08);
+    border: 1px solid rgba(65, 40, 12, 0.1);
+    text-align: left;
+
+    h3 {
+      font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      font-family: $font-secundaria;
+    }
+  }
+
+  &__gallery {
+    padding: clamp(3rem, 7vw, 5rem) clamp(1.5rem, 7vw, 5rem);
+    background-color: #faf7f3;
+  }
+
+  &__section-header {
+    text-align: center;
+    margin-bottom: clamp(2rem, 5vw, 3rem);
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.3rem);
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-family: $font-secundaria;
+      color: rgba(65, 40, 12, 0.8);
+    }
+  }
+
+  &__gallery-grid {
+    display: grid;
+    gap: clamp(1rem, 2.5vw, 2rem);
+
+    @media (min-width: $bp-tablet) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: $bp-desktop) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  &__gallery-card {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 18px 40px rgba(65, 40, 12, 0.12);
+    background: white;
+    display: grid;
+
+    img {
+      width: 100%;
+      height: clamp(200px, 30vw, 260px);
+      object-fit: cover;
+    }
+
+    figcaption {
+      padding: 1rem 1.2rem;
+      font-size: 0.95rem;
+      font-family: $font-secundaria;
+    }
+  }
+
+  &__experience {
+    padding: clamp(3rem, 7vw, 5rem) 1.5rem clamp(4rem, 8vw, 6rem);
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, rgba(65, 40, 12, 0.95), rgba(167, 138, 101, 0.85));
+  }
+
+  &__experience-card {
+    text-align: center;
+    max-width: 620px;
+    display: grid;
+    gap: 1.5rem;
+    color: white;
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+    }
+
+    p {
+      font-family: $font-secundaria;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      line-height: 1.7;
+    }
+  }
+}

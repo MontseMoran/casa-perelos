@@ -3,5 +3,47 @@
     "title": "Welcome to Casa Perelos",
     "subtitle": "Your rural accommodation in the heart of Galicia",
     "button": "Enter"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover Casa Perelos",
+      "subtitle": "An eighteenth-century manor lovingly restored so you can unwind among Galician nature, tradition and flavours.",
+      "cta": "Explore our rooms"
+    },
+    "intro": {
+      "title": "Authentic Galician hospitality",
+      "body": "Casa Perelos rises between oaks and meadows in the Ribeira Sacra. Every stone and beam tells the story of the family who still welcomes guests to experience a getaway with its own personality."
+    },
+    "highlights": [
+      {
+        "title": "Suites full of character",
+        "body": "Spacious rooms with exposed stone walls and natural fabrics designed for deep rest."
+      },
+      {
+        "title": "Farm-to-table flavours",
+        "body": "Artisanal breakfasts with local produce and culinary proposals that celebrate Galician cuisine."
+      },
+      {
+        "title": "Nature and culture",
+        "body": "Moments away from hiking trails, vineyards and charming villages across the Ribeira Sacra."
+      }
+    ],
+    "gallery": {
+      "title": "Corners of the house",
+      "subtitle": "Real images from Casa Perelos and the surrounding landscape."
+    },
+    "galleryCaptions": [
+      "Main facade framed by chestnut trees",
+      "Inner courtyard made for slow living",
+      "Shared living room with traditional lareira",
+      "Cordas suite with exposed stone walls",
+      "Sun-drenched terrace overlooking the valley",
+      "Natural setting of the Augacaída waterfall"
+    ],
+    "experience": {
+      "title": "Live the full experience",
+      "body": "We organise tastings, Ribeira Sacra tours and tailor-made activities so you make the most of your stay.",
+      "cta": "Plan your stay"
+    }
   }
 }
