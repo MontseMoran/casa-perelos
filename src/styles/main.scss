@@ -1,6 +1,10 @@
-// Importo lo global
 @use "./core/vars" as *;
 @use "./core/mixins" as *;
-@use "./core/base";
+@use "./core/base" as *;
 
-@use "./components/home.scss";
+// Componentes globales
+@use "./components/navbar";
+@use "./components/header";
+
+// Páginas
+@use "./components/home";

@@ -1,0 +1,59 @@
+@use "../core/vars" as *;
+
+.home {
+  &__contact {
+    padding: clamp(3rem, 7vw, 5rem) 1.5rem clamp(4rem, 8vw, 6rem);
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, rgba(65, 40, 12, 0.95), rgba(167, 138, 101, 0.85));
+    scroll-margin-top: 96px;
+  }
+
+  &__contact-card {
+    text-align: center;
+    max-width: 620px;
+    display: grid;
+    gap: 1.5rem;
+    color: white;
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+    }
+
+    p {
+      font-family: $font-secundaria;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      line-height: 1.7;
+    }
+  }
+
+  &__cta {
+    justify-self: center;
+    padding: 0.75rem 1.8rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: $color-boton;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $color-boton-hover;
+      transform: translateY(-2px);
+    }
+
+    &--light {
+      background-color: transparent;
+      border-color: rgba(255, 255, 255, 0.75);
+      color: white;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@use "../core/vars" as *;
+@use "../core/mixins" as *;
+
+.home {
+  &__hero {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.8) contrast(1.05) saturate(0.9); // 🔹 reduce brillo
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+    scroll-margin-top: 96px;
+
+    &-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+background: linear-gradient(
+  rgba(150, 105, 60, 0.25),
+  rgba(70, 40, 15, 0.65)
+      ); 
+    }
+  }
+
+  &__intro-card {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 28px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: clamp(2rem, 6vw, 3rem);
+    display: grid;
+    gap: 1.2rem;
+    max-width: 520px;
+  }
+
+  &__intro-logo {
+    width: clamp(5rem, 15vw, 8rem);
+    margin: 0 auto;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+  }
+
+  &__intro-text {
+    font-family: $font-secundaria;
+    font-size: clamp(1rem, 2.6vw, 1.25rem);
+    line-height: 1.6;
+  }
+
+  &__intro-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__lang-btn {
+    background: rgba(203, 173, 130, 0.9);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba(203, 173, 130, 1);
+      transform: translateY(-2px);
+    }
+  }
+}

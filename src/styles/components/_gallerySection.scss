@@ -1,0 +1,56 @@
+@use "../core/vars" as *;
+
+.home {
+  &__gallery {
+    padding: clamp(3rem, 8vw, 5.5rem) clamp(1.5rem, 7vw, 5rem);
+    background: white;
+  }
+
+  &__gallery-mosaic {
+    display: grid;
+    gap: clamp(1rem, 3vw, 1.8rem);
+
+    @media (min-width: $bp-tablet) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @media (min-width: $bp-desktop) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-auto-rows: 200px;
+    }
+  }
+
+  &__gallery-tile {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 16px 36px rgba(65, 40, 12, 0.12);
+    border: 1px solid rgba(65, 40, 12, 0.08);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1rem;
+      font-size: 0.9rem;
+      font-family: $font-secundaria;
+      color: white;
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.75));
+    }
+
+    &--1,
+    &--4 {
+      @media (min-width: $bp-desktop) {
+        grid-row: span 2;
+      }
+    }
+  }
+}
